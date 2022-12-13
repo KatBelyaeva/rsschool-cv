@@ -41,6 +41,6 @@ I have little experience in Python. I developed some telegram bots and a website
 **University:** Minsk State Linguistic University  
 **Courses:** Python developer courses, IT english courses, Python trainee.  
 ### Languages:
-Russian - native speaker  
-English - B1 (B2 in process)  
-French - B2
+**Russian** - native speaker  
+**English** - B1 (B2 in process)  
+**French** - B2
