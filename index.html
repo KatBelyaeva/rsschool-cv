@@ -1,12 +1,112 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>My CV</title>
-  <meta name="description" content="CV">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>cv</title>
 </head>
 <body>
-  <script src="js/scripts.js"></script>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#about_me" class="nav-link">About Me</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code_example" class="nav-link">Code Example</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section class="section" id="profile">
+        <img class="profile_photo" src="./assets/photo.jpg" alt="avatar">
+        <h1>Katerina Beliayeva</h1>
+        <p>Python developer</p>
+      </section>
+      <section class="section" id="contacts">
+        <h2 class="section-title">Contacts</h2>
+        <ul>
+          <li><b>Location:</b> Minsk, Belarus</li>
+          <li><b>Phone:</b> +375 29 621-13-65</li>
+          <li><b>Email::</b> kat.belyaeva.it@gmail.com</li>
+          <li><b>GitHub:</b> KatBelyaeva</li>
+        </ul>
+      </section>
+      <section class="section" id="about_me">
+        <h2 class="section-title">About Me</h2>
+        <p>I finished Python-developer courses with honor. Currently, I continue to improve my knowledge in development: I'm studying JavaScript.</p>
+        <p>I speak English at the level Intermediate (B2).</p>
+        <p>I would find a team with which I will grow and develop professionally.</p>
+      </section>
+      <section class="section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>MySQL</li>
+          <li>NoSQL</li>
+          <li>Django</li>
+          <li>Telebot</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section class="section" id="code_example">
+        <h2 class="section-title">Code example</h2>
+        <p>From CODEWARS:</p>
+        <p>Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized.</p>
+        <pre>
+          <code>
+          def to_camel_case(text):
+            text.replace(' ', '')
+            for i in text:
+                if i == '-':
+                    i_index = text.find('-')
+                    text = text.replace(text[i_index+1], text[i_index+1].upper())
+                    text = text.replace('-', '', 1)
+                elif i == '_':
+                    i_index = text.find('_')
+                    text = text.replace(text[i_index+1], text[i_index+1].upper())
+                    print(i_index)
+                    text = text.replace('_', '', 1)
+            return text</code>
+          </pre>
+      </section>
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience</h2>
+        <p>I have little experience in Python. I developed some telegram bots and a website.</p>     
+      </section>
+      <section class="section" id="education">
+        <h2 class="section-title">Education</h2>
+        <p><b>University:</b> Minsk State Linguistic University  
+        <p><b>Courses:</b> Python developer courses, IT english courses, Python trainee.</p>
+      </section>
+      <section class="section" id="languages">
+        <h2 class="section-title">Languages</h2>
+        <p><b>Russian</b> - native speaker
+        <p><b>English</b> - B1 (B2 in process)
+        <p><b>French</b> - B2
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div>Copyright 2022</div>
+      <a href="https://github.com/KatBelyaeva">My GitHub</a>
+      <a class="footer__rsschool" href="https://rs.school/js/" target="_blank">
+      <img class="footer_logo" src="assets/rs_school_js.svg" width="86" height="32" alt="RS School"></a>
+    </div>
+  </footer>
 </body>
 </html>
